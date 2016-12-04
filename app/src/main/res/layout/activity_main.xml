@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.talon.zmlcategory.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollview_main"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_common"
+                style="@style/radiobutton"
+                android:checked="true"
+                android:text="常用分类"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_jijian"
+                style="@style/radiobutton"
+                android:text="基建装潢"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_zonghe"
+                style="@style/radiobutton"
+                android:text="综合用品"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_chufang"
+                style="@style/radiobutton"
+                android:text="厨房用具"/>
+
+            <RadioButton
+                android:id="@+id/_zhuanye"
+                style="@style/radiobutton"
+                android:text="专业设备"/>
+
+            <RadioButton
+                android:id="@+id/rb_liangyou"
+                style="@style/radiobutton"
+                android:text="粮油调料"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_jiushui"
+                style="@style/radiobutton"
+                android:text="酒水饮料"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_shicai"
+                style="@style/radiobutton"
+                android:text="食材"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_bangong"
+                style="@style/radiobutton"
+                android:text="办公用品"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_jiaju"
+                style="@style/radiobutton"
+                android:text="家具"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_xuexi"
+                style="@style/radiobutton"
+                android:text="学习用品"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_xinxi"
+                style="@style/radiobutton"
+                android:text="信息系统"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_shenghuo"
+                style="@style/radiobutton"
+                android:text="生活"
+                />
+
+        </RadioGroup>
+
+
+    </ScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
